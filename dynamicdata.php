@@ -1,13 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<?php include "functions.php" ?>
+<?php include "includes/header.php" ?>
 
-<h1>Hello world</h1>
-    
-</body>
-</html>
+	<section class="content">
+
+	<aside class="col-xs-4">
+
+	<?php Navigation();?>
+			
+			
+	</aside><!--SIDEBAR-->
+
+
+<article class="main-content col-xs-8">
+		
+
+
+		<?php  
+
+		// This function says hello
+		
+          echo "<h1>Hello</h1>";
+		/* 
+		   Step 1:  Use the Echo Function to say hello with html h1                  tags embedded inside php.
+
+
+		   Step 2: Write a comment above the echo function and explain
+		   what that function is doing.
+
+
+		   */
+
+		?>
+
+	
+
+		</article><!--MAIN CONTENT-->
+
+<?php include "includes/footer.php" ?>
