@@ -9,17 +9,17 @@
     
 <?php
 
-echo pow(2,7);  // function -> 2 to the power 7
+$string = "Are you loving to code in php?";
+
+echo strlen($string); // counts the total number to spaces + alphabets
 echo "<br>";
 
-echo rand();  // function for RANDOM NUMBER
+echo strtoupper($string); //makes string to upper case
 echo "<br>";
 
-echo sqrt(10);  // square root 
+echo strtolower($string); //makes string to lower case
 echo "<br>";
 
-echo round(4.6); // for rounded off values
-echo "<br>";
 
 ?>
 
