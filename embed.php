@@ -2,9 +2,5 @@
 
 echo "hello world";
 
-
-
-
-
 ?>
 
