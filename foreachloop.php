@@ -15,7 +15,7 @@ $numbers = array(22,11,55,66,88);
 
 foreach($numbers as $number){
 
-    echo $number . "<br>";
+    echo $number . "<br>"; 
 }
 
 

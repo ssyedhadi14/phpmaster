@@ -1,5 +1,6 @@
 <?php
 
+
 if(isset($_POST['submit'])) // to receive data from form
 { 
 
@@ -15,6 +16,19 @@ if($connection){
 }else{
     die("Database Connection failed"); //die function indicates the DEAD status of the connection
 }
+
+$query = "INSERT INTO users(username,password)"; //table columns
+$query .= "VALUES ('$username', '$password')"; // string names
+
+$result = mysqli_query($connection, $query);
+
+if(!$result){
+    die('Query did not execute!!!' . mysqli_error());
+}
+
+
+
+
 }  
 
 ?>
@@ -25,7 +39,7 @@ if($connection){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LOGIN</title>
     <!-- ADDED BOOTSTRAP SCRIPT -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">

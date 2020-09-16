@@ -10,7 +10,7 @@ $minimum = 5;
 $maximum = 10;
 
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = $_POST['password']; 
 
 if(strlen($username) < $minimum) {
 
@@ -22,8 +22,20 @@ if(strlen($username) > $maximum) {
     echo "Username cannot be longer than 10 Characters <br>";
 
 }
+
+
+if(strlen($password) < $minimum) {
+
+    echo "Username has to be longer than 5 Characters <br>";
+
+}
+if(strlen($password) > $maximum) {
+
+    echo "Username cannot be longer than 10 Characters <br>";
+
+}
  
-if(!in_array($username, $name)){
+if(!in_array($username, $name)){ // will return the status
 
 echo "Sorry you are not allowed to Login <br>";
 
